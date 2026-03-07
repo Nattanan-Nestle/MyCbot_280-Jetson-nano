@@ -19,8 +19,8 @@ if current:
 
 print("ลด Z ลงไปวาง...")
 mc.send_coords([257.6, -60.4, 300.0, 177.34, 0.57, -45.28], SPEED)
-time.sleep(3)
-mc.send_coords([257.6, -60.4, 98.0, 177.34, 0.57, -45.28], SPEED)
+time.sleep(10)
+mc.send_coords([257.6, -60.4, 100.0, 177.34, 0.57, -45.28], SPEED)
 time.sleep(3)
 print("สั่ง gripper กางออก...")
 mc.set_gripper_state(0, 100)   # 0 = เปิด
