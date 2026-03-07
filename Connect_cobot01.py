@@ -125,6 +125,8 @@ def main():
     result = detect_object(frame, SCALE)
     if result is None:
         print("ไม่พบวัตถุในภาพ")
+        print("กำลังกลับ HOME")
+        mc.send_angles([0, 45, -120, -13, 0, -45], SPEED)
         return
     world_x, world_y, color_name, shape, cX, cY = result
     print(f"พบวัตถุ: {color_name} {shape}")
