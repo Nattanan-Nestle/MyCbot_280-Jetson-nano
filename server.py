@@ -64,7 +64,7 @@ def get_logger(name):
 
 class MycobotServer(object):
 
-    def __init__(self, host, port, serial_num="/dev/ttyAMA0", baud=1000000):
+    def __init__(self, host, port, serial_num="/dev/ttyTHS1", baud=1000000):
         """Server class
 
         Args:
@@ -200,4 +200,4 @@ if __name__ == "__main__":
     HOST = socket.inet_ntoa(fcntl.ioctl(s.fileno(), 0x8915, struct.pack('256s', bytes(ifname, encoding="utf8")))[20:24])
     PORT = 9000
     print("ip: {} port: {}".format(HOST, PORT))
-    MycobotServer(HOST, PORT, "/dev/ttyAMA0", 1000000)
+    MycobotServer(HOST, PORT, "/dev/ttyTHS1", 1000000)
