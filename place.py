@@ -25,3 +25,4 @@ time.sleep(3)
 print("สั่ง gripper กางออก...")
 mc.set_gripper_state(0, 100)   # 0 = เปิด
 time.sleep(3)
+mc.send_angles([0, 45, -120, -13, 0, -45], SPEED)
