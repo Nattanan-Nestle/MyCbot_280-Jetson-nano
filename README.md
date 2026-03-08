@@ -16,7 +16,7 @@
 
 
 วิธีการใช้งาน server.py
-1. เข้าไปที่ cd catkin/src/mycobot_ros/mycobot280/mycobot_280jn/scriptฝMyCbot_280-Jetson-nano
+1. เข้าไปที่ cd catkin/src/mycobot_ros/mycobot280/mycobot_280jn/script/MyCbot_280-Jetson-nano
 2. ใช้คำสั่ง python3 server.py
 3. ตัว Mycobot280 จะเปิดตัวเองเป็น server ให้ MyAGV เข้ามาเชื่อมต่อเพื่อสั่งงานการขยับเเขน 
 
